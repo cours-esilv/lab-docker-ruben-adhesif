@@ -1,0 +1,14 @@
+# Use a web server as the base image
+FROM nginx
+
+# Set the working directory
+WORKDIR /front
+
+# Copy the contents of the front directory to the default web server directory
+COPY . .
+
+# Set the execute permission for the entrypoint script
+RUN chmod +x entrypoint.sh
+
+# Set the entrypoint to execute the entrypoint script
+ENTRYPOINT sh ./entrypoint.sh
