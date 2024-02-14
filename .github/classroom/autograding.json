@@ -123,7 +123,7 @@
     {
       "name": "2.6.1",
       "setup": "",
-      "run": "grep -q -i -E 'docker-compose.*up.*\\-d' answers/2.1",
+      "run": "grep -q -i -E 'docker-compose.*up.*\\-d' answers/2.6.1",
       "input": "",
       "output": "",
       "comparison": "included",

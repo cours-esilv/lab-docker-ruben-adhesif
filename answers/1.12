@@ -1,0 +1,1 @@
+docker run -d --name frontend --network my-network -p 8000:8000 -e WS_BACK_URL=backend:5000 front
